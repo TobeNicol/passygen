@@ -1,0 +1,46 @@
+{
+  "name": "passygen",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "José González",
+    "email": "hola.jgonzalez@gmail.com",
+    "url": "https://deku.github.io"
+  },
+  "dependencies": {
+    "csv-parser": "^2.3.0",
+    "materialize-css": "^1.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-materialize": "^3.4.1",
+    "react-scripts": "3.1.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react-test-renderer": "^16.9.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
