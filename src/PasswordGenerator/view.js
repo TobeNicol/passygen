@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button } from 'react-materialize';
+import { Row, Col, Button, Range } from 'react-materialize';
 
 const PasswordGeneratorView = (props) => {
     const {
@@ -7,6 +7,7 @@ const PasswordGeneratorView = (props) => {
         handler
     } = props;
 
+  const range= React.createRef();
     return (
         <div>
             <Row>
@@ -14,7 +15,15 @@ const PasswordGeneratorView = (props) => {
                     <p id="#your-password">{text}</p>
                 </Col>
                 <Col s={12}>
-                <Button waves="light" style={{marginRight: '5px'}} onClick={handler}>
+                    <p> Password length:</p>
+                    <Range ref={range} max="20" min="10"/>
+                </Col>
+                <Col s={12}>
+                <Button waves="light" style={{marginRight: '5px'}} onClick={()=>{
+                    console.log(range.current._range.value)
+                    handler(range.current._range.value)
+                    
+                    }}>
                     Generate
                 </Button>
                 </Col>
